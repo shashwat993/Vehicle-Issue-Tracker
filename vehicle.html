@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle issue trakers</title>
+    <script src="vehicle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>VEHICLE ISSUE TRACKER</h1>
+    <div class="box-rapper">
+         
+        <div class="box1">
+            <h1>Input</h1>
+            <label for="daytype"> Type The Day day</label>
+            <input type="text" class="form-control" id="daytype" placeholder="Type the day eg sunday"/>
+                    <br/>
+                    <br>
+                    <label id="labelIssues" for="issues">Select The Issue Type</label>
+                    
+                        <select onchange="Click()" name="issues" id="issues">
+                                <option value="S">S </option>
+                                <option value="T">T</option>
+                                <option value="W">W </option>
+                        </select>
+                    <br/>
+                    <br>
+                    <label for="buttons">Press here</label>
+                    <button id="buttons" style="background-color:#4CAF50; color:azure  " onclick="Button()">Display the report</button>
+        </div>
+            <div class="issue-report" id="issue-report">
+                    <h1>Output</h1>
+            </div>      
+    </div>   
+</body>
+</html>
